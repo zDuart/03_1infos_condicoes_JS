@@ -6,11 +6,22 @@
 
     //ENTRADA
 
+    const numero = parseInt(prompt("Informe um número: "))
+    let conceito
 
     //PROCESSAMENTO
 
+    if(numero / 2){
+        if(numero % 2 == 0)
+        conceito = "Par"
+        else{
+        conceito = "Ímpar"
+    }
+    }
+    
     
     //SAÍDA
 
+    document.write(`${conceito}`)
 
 </script>

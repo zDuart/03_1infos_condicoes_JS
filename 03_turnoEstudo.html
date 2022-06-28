@@ -13,11 +13,24 @@
 
     //ENTRADA
 
-
+    const turno = String(prompt("Informe em que turno você estuda: "))
+    let conceito
     //PROCESSAMENTO
 
-    
-    //SAÍDA
+    if(turno === "M"){
+        conceito = "Bom Dia!"
+    }
+    else if(turno === "V"){
+        conceito = "Boa Tarde!"
+    }
+    else if(turno === "N"){
+        conceito = "Boa Noite!"
+    }
+    else{
+        conceito = "Valor Inválido!"
+    }
 
+    //SAÍDA
+    document.write(`${conceito}`)
 
 </script>

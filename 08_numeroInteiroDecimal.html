@@ -7,11 +7,18 @@
 
     //ENTRADA
 
+    const n = Number(prompt("Informe um número: "))
+    let conceito
 
     //PROCESSAMENTO
-
-    
+    if (n % 1 === 0){
+        conceito = "Não Decimal"
+    }
+    else{
+        conceito = "Decimal"
+    }
     //SAÍDA
 
+    document.write(`${conceito}`)
 
 </script>
